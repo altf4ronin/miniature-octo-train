@@ -9,7 +9,7 @@ copy_file() {
     local in_file=$1
     local out_file=$2
     local counter=1
-    while [ -f "$out_file" ]; do
+    while [[ -f "$out_file" ]]; do
         out_file="${2}_$counter"
         ((counter++))
     done
